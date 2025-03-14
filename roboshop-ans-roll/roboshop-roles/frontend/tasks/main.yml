@@ -31,9 +31,9 @@
 
      - name: Download and Extract frontend-v3.zip into /usr/share/nginx/html
        ansible.builtin.unarchive:
-       src:   https://roboshop-artifacts.s3.amazonaws.com/frontend-v3.zip
-       dest: /usr/share/nginx/html
-       remote_src: yes
+         src:   https://roboshop-artifacts.s3.amazonaws.com/frontend-v3.zip
+         dest: /usr/share/nginx/html
+         remote_src: yes
 
 #     - name: Download frontend-v3.zip
 #       ansible.builtin.get_url:
